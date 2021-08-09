@@ -28,11 +28,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
-                    bottomLeft: Radius.circular(100.0),
+                    bottomLeft: Radius.circular(50.0),
                   ),
                 ),
                 child: Stack(
-                  children: [Positioned(top: 20, left: 45, child: SearchBar())],
+                  children: [Positioned(top: 20, child: SearchBar())],
                 )),
           ),
           Container(

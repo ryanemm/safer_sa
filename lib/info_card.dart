@@ -12,7 +12,7 @@ class _InfoCardState extends State<InfoCard> {
     return Container(
         padding: EdgeInsets.all(10),
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
@@ -20,29 +20,31 @@ class _InfoCardState extends State<InfoCard> {
                 children: [
                   Text(
                     "Mall of Africa",
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
                   Row(
                     children: [
                       Text(
                         "6/10",
-                        style: TextStyle(fontSize: 24, color: Colors.white),
+                        style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
                       Icon(
-                        Icons.my_location_rounded,
-                        color: Colors.greenAccent,
+                        Icons.location_on_rounded,
+                        color: Colors.purpleAccent,
                       )
                     ],
                   ),
                 ],
               ),
               Text(
-                  "Lorem ipsum dolor sit amet, consectetur dgsdf elit, sed fo eiusmod tempor inciduntut ut wingardium leviosa expecto patronum."),
+                "Lorem ipsum dolor sit amet, consectetur dgsdf elit, sed fo eiusmod tempor inciduntut ut wingardium leviosa expecto patronum.",
+                style: GoogleFonts.nunito(fontSize: 12, color: Colors.white),
+              ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: EdgeInsets.only(left: 6, right: 6),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Colors.blue, Colors.purpleAccent]),
@@ -52,13 +54,10 @@ class _InfoCardState extends State<InfoCard> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(
-                            Icons.remove_red_eye,
-                            color: Colors.white,
-                          ),
                           Text(
                             "DIRECTIONS",
                             style: GoogleFonts.nunito(
+                                fontSize: 12,
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white),
                           ),
@@ -68,7 +67,7 @@ class _InfoCardState extends State<InfoCard> {
                     )),
                   ),
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: EdgeInsets.only(left: 6, right: 6),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Colors.blue, Colors.purpleAccent]),
@@ -78,13 +77,10 @@ class _InfoCardState extends State<InfoCard> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(
-                            Icons.remove_red_eye,
-                            color: Colors.white,
-                          ),
                           Text(
                             "REPORT INCIDENT",
                             style: GoogleFonts.nunito(
+                                fontSize: 12,
                                 fontWeight: FontWeight.w300,
                                 color: Colors.white),
                           ),
