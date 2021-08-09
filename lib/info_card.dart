@@ -20,13 +20,13 @@ class _InfoCardState extends State<InfoCard> {
                 children: [
                   Text(
                     "Mall of Africa",
-                    style: TextStyle(fontSize: 18, color: Colors.white),
+                    style: TextStyle(fontSize: 16, color: Colors.white),
                   ),
                   Row(
                     children: [
                       Text(
                         "6/10",
-                        style: TextStyle(fontSize: 18, color: Colors.white),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
                       Icon(
                         Icons.location_on_rounded,

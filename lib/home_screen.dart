@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(
-                top: 60.0, left: 30.0, right: 30.0, bottom: 20.0),
+                top: 20.0, left: 30.0, right: 30.0, bottom: 10.0),
           ),
           Expanded(
             child: Container(
@@ -44,27 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Color.fromARGB(255, 3, 37, 140),
                   borderRadius:
                       BorderRadius.only(topRight: Radius.circular(50.0))),
-              child: GlassmorphicContainer(
-                padding: EdgeInsets.only(left: 20),
-                width: double.infinity,
-                height: double.infinity,
-                blur: 80,
-                linearGradient: LinearGradient(
-                  colors: [
-                    Colors.yellow.withOpacity(0.5),
-                    Colors.grey.shade50.withOpacity(0.1)
-                  ],
-                  end: Alignment.topCenter,
-                  begin: Alignment.bottomCenter,
-                ),
-                borderRadius: 50,
-                border: 0,
-                borderGradient: LinearGradient(colors: [
-                  Colors.white24.withOpacity(0.2),
-                  Colors.white70.withOpacity(0.2)
-                ]),
-                child: InfoCard(),
-              ),
+              child: InfoCard(),
             ),
           ),
         ],
