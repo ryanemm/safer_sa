@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.safer_sa">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="safer_sa"
         android:icon="@mipmap/ic_launcher">
